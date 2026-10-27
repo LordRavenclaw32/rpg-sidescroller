@@ -1,10 +1,10 @@
 # Auditoria de Assets — Ecos de Valdoria
 
-> Varredura feita em 27/10/2026 no repositório `rpg-sidescroller` e no Google Drive de contato.alanrezende@gmail.com.
+> Varredura feita em 27/10/2026 no repositório `rpg-sidescroller` e em **todo** o Google Drive de contato.alanrezende@gmail.com (≈2.800 imagens, áudios e pacotes .zip, não só a pasta `RPG / TCG`). As imagens candidatas foram baixadas e inspecionadas visualmente.
 
 ## 1. Resultado em uma linha
 
-**Nenhum asset visual próprio para um RPG de fantasia side-scroller existe hoje.** O repositório estava vazio e o Drive tem material de outros projetos (zumbis/escola, card game de faroeste, modelos 3D). Dá para reaproveitar parte do **áudio (SFX CC0)** e alguns **efeitos ambientais**. Todo o resto precisa ser produzido ou obtido.
+**Nenhum personagem, inimigo, cenário ou interface de fantasia medieval existe hoje.** O repositório estava vazio e o conteúdo 2D do Drive pertence a outros projetos (jogo de zumbis, Sokoban da Kenney, jogos js13k, card game de faroeste). Dá para reaproveitar **4 efeitos visuais** (fogo no chão, arcos de corte, projétil ácido, névoa/poeira/vento), **explosões** e **~18 SFX CC0**. Todo o resto precisa ser produzido ou obtido.
 
 ---
 
@@ -15,33 +15,44 @@
 |---|---|
 | Arquivos | Nenhum (repositório recém-criado, sem commits) |
 
-### 2.2 Google Drive — pastas analisadas
+### 2.2 Google Drive — pastas com conteúdo 2D
 
-| Pasta | Conteúdo | Serve para este jogo? |
+| Pasta (caminho) | Conteúdo | Serve para este jogo? |
 |---|---|---|
 | `RPG / TCG` → `Jogos RPG` | PDFs de livros de RPG de mesa (Ordem Paranormal, Rune, Fortuito, Hora da Seis, Blanc & Noir, Casos Não Resolvidos) | ❌ Só referência de regras/lore |
-| `RPG / TCG` → `Jogos RPG` → `Cardgame` | Card game "Sessão Maldita" (cartas 63×88 com tema faroeste/ratos/queijo), desenhos para colorir, cenário imersivo em PDF | ❌ Tema e estilo incompatíveis (ilustração de carta, não sprite) |
-| `Spritesheet` (≈35 PNGs, 1–3 MB cada) | Atlas pixel art gerados por IA para o projeto *Zombie Game*: professor, zumbis (operário, chef, enfermeira, guarda), mapas escolares, pisos, armas modernas, inventário de sobrevivência | ⚠️ Quase tudo incompatível (tema moderno/escolar). Exceções na seção 3 |
-| `sounds` (subset do pack *512 Retro SFX* de Juhani Junkala, **CC0**) | ~18 efeitos: moedas, explosões, passos, portal, impacto, quedas, erro, pausa + 1 MIDI | ✅ Reaproveitável |
-| `assets_glb` | Modelos 3D (.glb/.blend) de vila, pets, props | ❌ 3D, outro projeto |
-| `Soltos` → `pixel-platformer-engine.zip` | Engine de plataforma pixel (código) | ⚠️ Referência técnica apenas |
-| `HTML5 Apps e Jogos` | Jogos educativos (Bomba de Palavras etc.) | ❌ Outro projeto (útil só como referência de PWA: manifest, sw.js, ícones) |
+| `RPG / TCG` → `Jogos RPG` → `Cardgame` | Card game "Sessão Maldita": 35 cartas 63×88 (faroeste/ratos/queijo), 12 desenhos para colorir, cenário em PDF | ❌ Ilustração de carta, não sprite; tema incompatível |
+| `Zombie Game` → `Spritesheet` (**106 PNGs**, 0,5–3,5 MB) | Atlas gerados por IA para o jogo de zumbis. Inspecionados um a um: zumbis (operário, chef, enfermeira, guarda, treinador com corda, Boss Diretor), professor/sobrevivente com taco, NPCs 1–4 (andar/interagir/morrer), armas modernas, itens de sobrevivência (água, enlatados, kit médico), tiles de escola, padaria, rua e bairro, carros destruídos | ⚠️ Personagens, tiles e itens incompatíveis (cenário moderno). **VFX reaproveitáveis** — ver seção 3 |
+| `HTML5 Apps e Jogos` → `Aventura de Luis` → `images` | Pack **Kenney Sokoban** (CC0): `Crates` (51), `Ground/Explosion/Keys` (35, inclui `explosion_0…8` e bombas), `Player` (30, visão de cima), `Environment` (26), `Blocks` (8) | ⚠️ Jogo top-down. Só as explosões e bombas servem (estilo cartoon, diferente do pixel art) |
+| `HTML5 Apps e Jogos` → `Aventura de Luis` → `sounds` | Subset do pack *512 Retro SFX* de Juhani Junkala (**CC0**), 52 arquivos (≈18 sons em .wav/.mp3) + 1 MIDI | ✅ Reaproveitável |
+| `HTML5 Apps e Jogos` → `Planta vs Cubinhos` → `build/images` | `planty1-3.gif` + `plantyShoot.gif` (37×59, planta que atira) | ⚠️ Estilo minimalista; serve só como placeholder de inimigo-planta |
+| `HTML5 Apps e Jogos` → `Oh Não!`, `Blackout`, `Missão Espacial`, `Donzela de Valhalla`, `Gelecas contra Elementais`, `Monstria` etc. | Jogos js13k/minimalistas: `tileset.png` 96×16 (6 tiles), `sprites.png` 128×128, nave espacial, ícones/capas dos jogos | ❌ Resolução e estilo incompatíveis (só capas/ícones) |
+| `Zombie Game` → `Soltos` | 11 .zip de projetos CodePen: `pixel-platformer-engine`, `microvania`, `game-the-dungeon`, `top-down-2d-game-camera`, `canvas-fireworks`… | ⚠️ Referência de código (física de plataforma, câmera, partículas). Sem arte utilizável |
+| `HTML5 Apps e Jogos` → `Fonética Game` / `Alfabetização em Jogo` | Áudios de vogais (a/e/i/o/u.wav) | ❌ Educativo |
+| `assets_glb` | Modelos 3D (.glb/.blend) de vila, pets, props | ❌ 3D |
+| `Primeira Versão` → `Principais`, `Alunas em geral` etc. | Fotos de pessoas reais (retratos) | ❌ Não usar (imagem de pessoas reais) |
+| Demais pastas (`Materiais`, `Práticas`, capas de livros, screenshots e fotos de 2019, podcasts .m4a) | Material pedagógico e pessoal | ❌ |
 
 ---
 
 ## 3. Assets reaproveitáveis
 
-| Asset (Drive) | Uso em Ecos de Valdoria | Observação |
+| Asset (Drive) | O que é (verificado) | Uso em Ecos de Valdoria |
 |---|---|---|
-| `Atlas de Efeitos Ambientais em Pixel Art.png` — neblina baixa/alta, folhas rolando e no ar, poeira ao andar/correr, linhas de vento, detritos, partículas | Ambiente da Floresta de Brumaverde, Pântano Cinzento e Ruínas; poeira de corrida/pouso do jogador | Precisa ser fatiado em frames de grid fixo; "papel amassado" descartado |
-| `Sprite Sheet de Gosma Tóxica Retro.png` | Inimigo **Lodo Pútrido** (Pântano) | Conferir paleta e escala (alvo: 32×32) |
-| `sounds/sfx_coin_*` | Coleta de ouro e itens | — |
-| `sounds/sfx_exp_medium5`, `sfx_exp_various4` | Explosões de magia / morte de chefe | — |
-| `sounds/sfx_movement_footsteps1a/1b` | Passos | — |
-| `sounds/sfx_movement_portal2` | Portal de fim de fase / teletransporte do Mago | — |
-| `sounds/sfx_sounds_impact11` | Golpe acertando | — |
-| `sounds/sfx_sounds_falling*` | Queda em abismo | — |
-| `sounds/sfx_sounds_pause*_in`, `sfx_sounds_error3`, `sfx_sound_nagger2` | UI (pausa, ação inválida, alerta) | — |
+| `Spritesheet/Chamas no chão.png` (2172×724) | 6 quadros de chamas no chão, da ignição ao fogo baixo | Chão em chamas do **Meteoro Ancestral** (Mago), lava das Minas, ataque do **Golem de Magma** |
+| `Spritesheet/Projeçao do Taco.png` (1774×887) | 4 arcos de corte brancos com rastro | **Slash VFX** do combo do Guerreiro e da Ladina (aplicar tint por classe) |
+| `Spritesheet/Sprite Sheet de Gosma Tóxica Retro.png` (1672×941) | 12 quadros de projétil ácido verde em voo e respingo | Cuspe do **Lodo Pútrido** e magia da **Bruxa Morvena** |
+| `Spritesheet/Atlas de Efeitos Ambientais em Pixel Art.png` (1536×1024) | Neblina baixa/alta, folhas rolando e no ar, poeira ao andar/correr, linhas de vento, detritos, partículas | Névoa de Brumaverde e do Pântano, poeira de corrida/pouso, vento das Ruínas (descartar a linha "papel") |
+| `Aventura de Luis/images/.../explosion_0…8.png`, `bomb_*.png` | Explosão em 9 quadros + bomba (Kenney, CC0) | Bombas dos **Kobolds Mineiros** — placeholder até arte definitiva (estilo cartoon) |
+| `Planta vs Cubinhos/build/images/planty*.gif` | Planta 37×59, 3 quadros idle + 1 tiro | Placeholder de inimigo-planta em Brumaverde |
+| `sounds/sfx_coin_*` | Moedas | Coleta de ouro e itens |
+| `sounds/sfx_exp_medium5`, `sfx_exp_various4` | Explosões | Magias e morte de chefe |
+| `sounds/sfx_movement_footsteps1a/1b` | Passos | Passos |
+| `sounds/sfx_movement_portal2` | Portal | Fim de fase / teletransporte do Mago |
+| `sounds/sfx_sounds_impact11` | Impacto | Golpe acertando |
+| `sounds/sfx_sounds_falling*` | Queda | Queda em abismo |
+| `sounds/sfx_sounds_pause*_in`, `sfx_sounds_error3`, `sfx_sound_nagger2` | UI | Pausa, ação inválida, alerta |
+
+**Tratamento necessário nos atlas gerados por IA:** vários estão em RGB com fundo preto (sem transparência), em grid irregular e com quadros de ~250 px. Antes de usar é preciso remover o fundo, recortar em grid uniforme e reduzir para a escala do jogo (personagem ~40 px de altura) com redução de paleta. Isso será feito por script no pipeline de build (`tools/slice-atlas`).
 
 > **Recomendação:** baixar o pack completo *The Essential Retro Video Game Sound Effects Collection [512 sounds]* (CC0, mesmo autor). Ele já contém espada (`sfx_wpn_sword1-3`), adaga, socos, pulo/pouso (20 variações), menu, power-up, level-up (fanfarras), alarme de vida baixa e gritos de morte — cobre ~70% dos SFX faltantes sem custo.
 
@@ -77,17 +88,17 @@ Frame base **64×64 px** (personagem ocupa ~24×40), olhando para a direita (esp
 
 | Asset | Prioridade |
 |---|---|
-| Rastro de corte (slash) 3 variações | P0 |
+| Rastro de corte (slash) 3 variações | P0 — **4 arcos disponíveis** (`Projeçao do Taco`) |
 | Faísca de impacto (hit spark) | P0 |
 | Flecha + flecha carregada + chuva de flechas | P0 |
-| Bola de fogo, lança de gelo, corrente de raio, meteoro | P0 / P1 |
+| Bola de fogo, lança de gelo, corrente de raio, meteoro | P0 / P1 — **chão em chamas disponível** (`Chamas no chão`) |
 | Adagas arremessadas, nuvem de fumaça, rastro de sombra | P0 / P1 |
 | Escudo / aura (Guerreiro), círculo arcano (Mago) | P1 |
-| Explosão de morte de inimigo (fumaça + almas) | P0 |
+| Explosão de morte de inimigo (fumaça + almas) | P0 — explosão Kenney como placeholder |
 | Level-up (pilar de luz), cura, buff, debuff (veneno, queimadura, congelamento) | P1 |
 | Números de dano (fonte bitmap) | P0 |
 
-### 4.3 Inimigos comuns (hordas) — 1 de 15 parcialmente disponível
+### 4.3 Inimigos comuns (hordas) — 0 de 15 disponíveis
 
 Frame base 32×32 (pequenos), 48×48 (médios), 64×64 (grandes). Animações mínimas: idle, walk, attack, hurt, death.
 
@@ -98,7 +109,7 @@ Frame base 32×32 (pequenos), 48×48 (médios), 64×64 (grandes). Animações m�
 | 1 Brumaverde | Lobo Sombrio | 48 | Falta (P0) |
 | 2 Pântano Cinzento | Esqueleto Afogado | 48 | Falta (P1) |
 | 2 Pântano Cinzento | Aranha Tecelã | 32 | Falta (P1) |
-| 2 Pântano Cinzento | Lodo Pútrido | 32 | **Parcial** (gosma tóxica do Drive) |
+| 2 Pântano Cinzento | Lodo Pútrido | 32 | Falta (P1) — o projétil ácido já existe |
 | 3 Minas de Ferroprofundo | Kobold Mineiro | 32 | Falta (P1) |
 | 3 Minas de Ferroprofundo | Morcego de Cristal | 32 | Falta (P1) |
 | 3 Minas de Ferroprofundo | Golem de Pedra | 64 | Falta (P1) |
