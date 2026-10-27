@@ -1,6 +1,6 @@
 # Auditoria de Assets — Ecos de Valdoria
 
-> Varredura feita em 27/10/2026 no repositório `rpg-sidescroller` e em **todo** o Google Drive de contato.alanrezende@gmail.com (≈2.800 imagens, áudios e pacotes .zip, não só a pasta `RPG / TCG`). As imagens candidatas foram baixadas e inspecionadas visualmente.
+> Varredura feita em 27/10/2026 no repositório `rpg-sidescroller` e em **todo** o Google Drive de contato.alanrezende@gmail.com (≈2.800 imagens, áudios e pacotes .zip, não só a pasta `RPG / TCG`). As imagens candidatas foram baixadas e abertas para conferência visual.
 
 ## 1. Resultado em uma linha
 
@@ -21,7 +21,7 @@
 |---|---|---|
 | `RPG / TCG` → `Jogos RPG` | PDFs de livros de RPG de mesa (Ordem Paranormal, Rune, Fortuito, Hora da Seis, Blanc & Noir, Casos Não Resolvidos) | ❌ Só referência de regras/lore |
 | `RPG / TCG` → `Jogos RPG` → `Cardgame` | Card game "Sessão Maldita": 35 cartas 63×88 (faroeste/ratos/queijo), 12 desenhos para colorir, cenário em PDF | ❌ Ilustração de carta, não sprite; tema incompatível |
-| `Último Dia de Aula` → `Spritesheet` (**106 PNGs**, 0,5–3,5 MB) | Atlas gerados por IA para o jogo de zumbis "Último Dia de Aula". Inspecionados um a um: zumbis (operário, chef, enfermeira, guarda, treinador com corda, Boss Diretor), professor/sobrevivente com taco, NPCs 1–4 (andar/interagir/morrer), armas modernas, itens de sobrevivência (água, enlatados, kit médico), tiles de escola, padaria, rua e bairro, carros destruídos | ⚠️ Personagens, tiles e itens incompatíveis (cenário moderno). **VFX reaproveitáveis** — ver seção 3 |
+| `Último Dia de Aula` → `Spritesheet` (**106 PNGs**, 0,5–3,5 MB) | Atlas gerados por IA para o jogo de zumbis "Último Dia de Aula". Todos os 106 nomes revisados e 17 imagens abertas (incluindo amostras dos 43 arquivos sem nome descritivo): zumbis (operário, chef, enfermeira, guarda, treinador com corda, Boss Diretor), professor/sobrevivente com taco, NPCs 1–4 (andar/interagir/morrer), armas modernas, itens de sobrevivência (água, enlatados, kit médico), tiles de escola, padaria, rua e bairro, carros destruídos | ⚠️ Personagens, tiles e itens incompatíveis (cenário moderno). **VFX reaproveitáveis** — ver seção 3 |
 | `HTML5 Apps e Jogos` → `Aventura de Luis` → `images` | Pack **Kenney Sokoban** (CC0): `Crates` (51), `Ground/Explosion/Keys` (35, inclui `explosion_0…8` e bombas), `Player` (30, visão de cima), `Environment` (26), `Blocks` (8) | ⚠️ Jogo top-down. Só as explosões e bombas servem (estilo cartoon, diferente do pixel art) |
 | `HTML5 Apps e Jogos` → `Aventura de Luis` → `sounds` | Subset do pack *512 Retro SFX* de Juhani Junkala (**CC0**), 52 arquivos (≈18 sons em .wav/.mp3) + 1 MIDI | ✅ Reaproveitável |
 | `HTML5 Apps e Jogos` → `Planta vs Cubinhos` → `build/images` | `planty1-3.gif` + `plantyShoot.gif` (37×59, planta que atira) | ⚠️ Estilo minimalista; serve só como placeholder de inimigo-planta |
